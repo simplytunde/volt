@@ -13,8 +13,8 @@ The following are some helpful notes on how to run Phore on your native platform
 
 Unpack the files into a directory and run:
 
-- bin/32/phore-qt (GUI, 32-bit) or bin/32/phored (headless, 32-bit)
-- bin/64/phore-qt (GUI, 64-bit) or bin/64/phored (headless, 64-bit)
+- bin/32/phore-qt (GUI, 32-bit) or bin/32/voltd (headless, 32-bit)
+- bin/64/phore-qt (GUI, 64-bit) or bin/64/voltd (headless, 64-bit)
 
 ### Windows
 

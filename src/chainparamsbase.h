@@ -9,7 +9,7 @@
 #include <vector>
 
 /**
- * CBaseChainParams defines the base parameters (shared between volt-cli and phored)
+ * CBaseChainParams defines the base parameters (shared between volt-cli and voltd)
  * of a given instance of the Phore system.
  */
 class CBaseChainParams

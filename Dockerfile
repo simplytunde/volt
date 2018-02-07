@@ -19,5 +19,5 @@ RUN echo "rpcuser=$RPC_USER\nrpcpassword=$RPC_PASSWORD" > /root/.phore/phore.con
 EXPOSE 8332 8333 18332 18333
 
 WORKDIR /phore-1.1.0/bin
-CMD ["/phore-1.1.0/bin/phored"]
+CMD ["/phore-1.1.0/bin/voltd"]
 

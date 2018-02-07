@@ -66,7 +66,7 @@ bin_PROGRAMS =
 TESTS =
 
 if BUILD_BITCOIND
-  bin_PROGRAMS += phored
+  bin_PROGRAMS += voltd
 endif
 
 if BUILD_BITCOIN_UTILS
@@ -190,7 +190,7 @@ obj/build.h: FORCE
 	  $(abs_top_srcdir)
 libbitcoin_util_a-clientversion.$(OBJEXT): obj/build.h
 
-# server: shared between phored and phore-qt
+# server: shared between voltd and phore-qt
 libbitcoin_server_a_CPPFLAGS = $(BITCOIN_INCLUDES) $(MINIUPNPC_CPPFLAGS) $(EVENT_CFLAGS) $(EVENT_PTHREADS_CFLAGS)
 libbitcoin_server_a_SOURCES = \
   addrman.cpp \
@@ -236,7 +236,7 @@ libbitcoin_zmq_a_SOURCES = \
   zmq/zmqpublishnotifier.cpp
 endif
 
-# wallet: shared between phored and phore-qt, but only linked
+# wallet: shared between voltd and phore-qt, but only linked
 # when wallet enabled
 
 libbitcoin_wallet_a_CFLAGS = -fPIC
@@ -332,7 +332,7 @@ libzerocoin_libbitcoin_zerocoin_a_SOURCES = \
   libzerocoin/Params.cpp \
   libzerocoin/SerialNumberSignatureOfKnowledge.cpp
 
-# common: shared between phored, and phore-qt and non-server tools
+# common: shared between voltd, and phore-qt and non-server tools
 libbitcoin_common_a_CPPFLAGS = $(BITCOIN_INCLUDES)
 libbitcoin_common_a_SOURCES = \
   accumulators.cpp \
@@ -402,7 +402,7 @@ nodist_libbitcoin_util_a_SOURCES = $(srcdir)/obj/build.h
 #
 
 # bitcoind binary #
-phored_LDADD = \
+voltd_LDADD = \
   $(LIBBITCOIN_SERVER) \
   $(LIBBITCOIN_COMMON) \
   $(LIBBITCOIN_UNIVALUE) \
@@ -414,22 +414,22 @@ phored_LDADD = \
   $(LIBSECP256K1)
 
 if ENABLE_ZMQ
-phored_LDADD += $(LIBBITCOIN_ZMQ) $(ZMQ_LIBS)
+voltd_LDADD += $(LIBBITCOIN_ZMQ) $(ZMQ_LIBS)
 endif
 
 if ENABLE_WALLET
-phored_LDADD += libbitcoin_wallet.a
+voltd_LDADD += libbitcoin_wallet.a
 endif
-phored_SOURCES = phored.cpp
+voltd_SOURCES = voltd.cpp
 #
 
 if TARGET_WINDOWS
-phored_SOURCES += phored-res.rc
+voltd_SOURCES += voltd-res.rc
 endif
 
-phored_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS)
-phored_CPPFLAGS = $(BITCOIN_INCLUDES)
-phored_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+voltd_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS)
+voltd_CPPFLAGS = $(BITCOIN_INCLUDES)
+voltd_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 
 # volt-cli binary #

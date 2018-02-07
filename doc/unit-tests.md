@@ -6,9 +6,9 @@ and tests weren't explicitly disabled.
 
 After configuring, they can be run with 'make check'.
 
-To run the phored tests manually, launch src/test/test_phore .
+To run the voltd tests manually, launch src/test/test_phore .
 
-To add more phored tests, add `BOOST_AUTO_TEST_CASE` functions to the existing
+To add more voltd tests, add `BOOST_AUTO_TEST_CASE` functions to the existing
 .cpp files in the test/ directory or add new .cpp files that
 implement new BOOST_AUTO_TEST_SUITE sections.
 

@@ -4461,7 +4461,7 @@ To enable AutoMint add &apos;enablezeromint=1&apos; in phore.conf</source>
     </message>
     <message>
         <source>
-To use phored, or the -server option to phore-qt, you must set an rpcpassword in the configuration file:
+To use voltd, or the -server option to phore-qt, you must set an rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
 rpcuser=phorerpc
@@ -4473,7 +4473,7 @@ It is also recommended to set alertnotify so you are notified of problems;
 for example: alertnotify=echo %%s | mail -s &quot;Phore Alert&quot; admin@foo.com
 </source>
         <translation>
-        phored, phore-qt にserverオプションを付ける場合、以下の設定が必要になります。:
+        voltd, phore-qt にserverオプションを付ける場合、以下の設定が必要になります。:
         %s
         phore.confにRPCユーザー名,パスワードを入力してください。:
         rpcuser=phorerpc
@@ -5586,7 +5586,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Phore Alert&quot; admin@foo.co
         <translation></translation>
     </message>
     <message>
-        <source>To use phored, or the -server option to phore-qt, you must set an rpcpassword in the configuration file:
+        <source>To use voltd, or the -server option to phore-qt, you must set an rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
 rpcuser=phorerpc
@@ -5597,7 +5597,7 @@ If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
 for example: alertnotify=echo %%s | mail -s &quot;Phore Alert&quot; admin@foo.com
 </source>
-        <translation>phored, phore-qt -server を利用する場合rpcの設定が必要です。:
+        <translation>voltd, phore-qt -server を利用する場合rpcの設定が必要です。:
 %s
 ランダムなパスワードの利用を推奨します。
 rpcuser=phorerpc

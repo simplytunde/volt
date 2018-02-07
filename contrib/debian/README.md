@@ -1,8 +1,8 @@
 
 Debian
 ====================
-This directory contains files used to package phored/phore-qt
-for Debian-based Linux systems. If you compile phored/phore-qt yourself, there are some useful files here.
+This directory contains files used to package voltd/phore-qt
+for Debian-based Linux systems. If you compile voltd/phore-qt yourself, there are some useful files here.
 
 ## phore: URI support ##
 

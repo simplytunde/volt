@@ -7,13 +7,13 @@ User=phore
 Group=phore
 
 Type=forking
-PIDFile=/var/lib/phored/phored.pid
+PIDFile=/var/lib/voltd/voltd.pid
 
-ExecStart=/usr/bin/phored -daemon -pid=/var/lib/phored/phored.pid \
-          -conf=/etc/phore/phore.conf -datadir=/var/lib/phored
+ExecStart=/usr/bin/voltd -daemon -pid=/var/lib/voltd/voltd.pid \
+          -conf=/etc/phore/phore.conf -datadir=/var/lib/voltd
 
 ExecStop=-/usr/bin/volt-cli -conf=/etc/phore/phore.conf \
-         -datadir=/var/lib/phored stop
+         -datadir=/var/lib/voltd stop
 
 Restart=always
 PrivateTmp=true

@@ -1,6 +1,6 @@
 Mac OS X Build Instructions and Notes
 ====================================
-This guide will show you how to build phored (headless client) for OSX.
+This guide will show you how to build voltd (headless client) for OSX.
 
 Notes
 -----
@@ -42,14 +42,14 @@ Instructions: Homebrew
         
         Note: On High Sierra (or when libzmq cannot be found), libzmq should be replaced with zeromq
 
-### Building `phored`
+### Building `voltd`
 
 1. Clone the github tree to get the source code and go into the directory.
 
         git clone https://github.com/phoreproject/Phore.git
         cd Phore
 
-2.  Build phored:
+2.  Build voltd:
         
         chmod +x share/genbuild.sh autogen.sh 
         ./autogen.sh
@@ -62,7 +62,7 @@ Instructions: Homebrew
 
         make check
 
-4.  (Optional) You can also install phored to your path:
+4.  (Optional) You can also install voltd to your path:
 
         make install
 
@@ -84,11 +84,11 @@ Download Qt Creator from http://www.qt.io/download/. Download the "community edi
 
 Creating a release build
 ------------------------
-You can ignore this section if you are building `phored` for your own use.
+You can ignore this section if you are building `voltd` for your own use.
 
-phored/volt-cli binaries are not included in the phore-Qt.app bundle.
+voltd/volt-cli binaries are not included in the phore-Qt.app bundle.
 
-If you are building `phored` or `phore-qt` for others, your build machine should be set up
+If you are building `voltd` or `phore-qt` for others, your build machine should be set up
 as follows for maximum compatibility:
 
 All dependencies should be compiled with these flags:
@@ -103,10 +103,10 @@ bundle is packaged and signed to create the .dmg disk image that is distributed.
 Running
 -------
 
-It's now available at `./phored`, provided that you are still in the `src`
+It's now available at `./voltd`, provided that you are still in the `src`
 directory. We have to first create the RPC configuration file, though.
 
-Run `./phored` to get the filename where it should be put, or just try these
+Run `./voltd` to get the filename where it should be put, or just try these
 commands:
 
     echo -e "rpcuser=phorerpc\nrpcpassword=$(xxd -l 16 -p /dev/urandom)" > "/Users/${USER}/Library/Application Support/Phore/phore.conf"
@@ -121,7 +121,7 @@ you can monitor its process by looking at the debug.log file, like this:
 Other commands:
 -------
 
-    ./phored -daemon # to start the phore daemon.
+    ./voltd -daemon # to start the phore daemon.
     ./volt-cli --help  # for a list of command-line options.
     ./volt-cli help    # When the daemon is running, to get a list of RPC commands
     

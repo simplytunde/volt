@@ -3955,7 +3955,7 @@ https://www.transifex.com/phore-project/phore-project-translations</translation>
         <translation>Dette produkt anvender software udviklet i OpenSSL projektet til brug i OpenSSL værktøjssættet &lt;https://www.openssl.org/&gt; og kryptosoftware skrevet afEric Young og UPnP software skrevet af Thomas Bernard.</translation>
     </message>
     <message>
-        <source>To use phored, or the -server option to phore-qt, you must set an rpcpassword in the configuration file:
+        <source>To use voltd, or the -server option to phore-qt, you must set an rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
 rpcuser=phorerpc
@@ -3966,7 +3966,7 @@ If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
 for example: alertnotify=echo %%s | mail -s "Phore Alert" admin@foo.com
 </source>
-        <translation>For at bruge phored eller -server muligheden sammen med phore-qt skal der angives et rpc kodeord i konfigurationsfilen:
+        <translation>For at bruge voltd eller -server muligheden sammen med phore-qt skal der angives et rpc kodeord i konfigurationsfilen:
 %s
 De anbefales at benytte følgende tilfældige kodeord
 Rpcuser=phorerpc

@@ -170,7 +170,7 @@ QT_TRANSLATE_NOOP("phore-core", ""
 "the OpenSSL Toolkit <https://www.openssl.org/> and cryptographic software "
 "written by Eric Young and UPnP software written by Thomas Bernard."),
 QT_TRANSLATE_NOOP("phore-core", ""
-"To use phored, or the -server option to phore-qt, you must set an rpcpassword "
+"To use voltd, or the -server option to phore-qt, you must set an rpcpassword "
 "in the configuration file:\n"
 "%s\n"
 "It is recommended you use the following random password:\n"
