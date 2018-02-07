@@ -86,7 +86,7 @@ Creating a release build
 ------------------------
 You can ignore this section if you are building `phored` for your own use.
 
-phored/phore-cli binaries are not included in the phore-Qt.app bundle.
+phored/volt-cli binaries are not included in the phore-Qt.app bundle.
 
 If you are building `phored` or `phore-qt` for others, your build machine should be set up
 as follows for maximum compatibility:
@@ -122,8 +122,8 @@ Other commands:
 -------
 
     ./phored -daemon # to start the phore daemon.
-    ./phore-cli --help  # for a list of command-line options.
-    ./phore-cli help    # When the daemon is running, to get a list of RPC commands
+    ./volt-cli --help  # for a list of command-line options.
+    ./volt-cli help    # When the daemon is running, to get a list of RPC commands
     
 Troubleshooting:<a name="trouble"></a>
 ---------

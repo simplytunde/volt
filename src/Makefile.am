@@ -70,7 +70,7 @@ if BUILD_BITCOIND
 endif
 
 if BUILD_BITCOIN_UTILS
-  bin_PROGRAMS += phore-cli phore-tx
+  bin_PROGRAMS += volt-cli phore-tx
 endif
 
 .PHONY: FORCE
@@ -392,7 +392,7 @@ libbitcoin_util_a_SOURCES += compat/glibc_compat.cpp
 libbitcoin_util_a_SOURCES += compat/glibcxx_compat.cpp
 endif
 
-# cli: shared between phore-cli and phore-qt
+# cli: shared between volt-cli and phore-qt
 libbitcoin_cli_a_CPPFLAGS = $(BITCOIN_INCLUDES)
 libbitcoin_cli_a_SOURCES = \
   rpcclient.cpp \
@@ -432,7 +432,7 @@ phored_CPPFLAGS = $(BITCOIN_INCLUDES)
 phored_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 
-# phore-cli binary #
+# volt-cli binary #
 phore_cli_LDADD = \
   $(LIBBITCOIN_CLI) \
   $(LIBBITCOIN_UTIL) \
@@ -442,7 +442,7 @@ phore_cli_LDADD = \
   $(EVENT_LIBS)
 
 phore_cli_SOURCES = \
-  phore-cli.cpp
+  volt-cli.cpp
 
 phore_cli_CPPFLAGS = $(BITCOIN_INCLUDES) $(EVENT_CFLAGS)
 #
@@ -464,7 +464,7 @@ phore_tx_CPPFLAGS = $(BITCOIN_INCLUDES)
 phore_tx_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-phore_cli_SOURCES += phore-cli-res.rc
+phore_cli_SOURCES += volt-cli-res.rc
 endif
 phore_cli_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 

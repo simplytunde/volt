@@ -12,7 +12,7 @@ PIDFile=/var/lib/phored/phored.pid
 ExecStart=/usr/bin/phored -daemon -pid=/var/lib/phored/phored.pid \
           -conf=/etc/phore/phore.conf -datadir=/var/lib/phored
 
-ExecStop=-/usr/bin/phore-cli -conf=/etc/phore/phore.conf \
+ExecStop=-/usr/bin/volt-cli -conf=/etc/phore/phore.conf \
          -datadir=/var/lib/phored stop
 
 Restart=always
