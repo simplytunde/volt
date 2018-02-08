@@ -1,7 +1,7 @@
-TOR SUPPORT IN Phore
+TOR SUPPORT IN Volt
 =======================
 
-It is possible to run Phore as a Tor hidden service, and connect to such services.
+It is possible to run Volt as a Tor hidden service, and connect to such services.
 
 The following directions assume you have a Tor proxy running on port 9050. Many
 distributions default to having a SOCKS proxy listening on port 9050, but others
@@ -10,10 +10,10 @@ port. See [Tor Project FAQ:TBBSocksPort](https://www.torproject.org/docs/faq.htm
 for how to properly configure Tor.
 
 
-Run Phore behind a Tor proxy
+Run Volt behind a Tor proxy
 ----------------------------------
 
-The first step is running Phore behind a Tor proxy. This will already make all
+The first step is running Volt behind a Tor proxy. This will already make all
 outgoing connections be anonymized, but more is possible.
 ```
 -proxy=ip:port  Set the proxy server. If SOCKS5 is selected (default), this proxy
@@ -46,7 +46,7 @@ In a typical situation, this suffices to run behind a Tor proxy:
 ./voltd -proxy=127.0.0.1:9050
 ```
 
-Run a Phore hidden server
+Run a Volt hidden server
 -------------------------------
 
 If you configure your Tor system accordingly, it is possible to make your node also
@@ -71,10 +71,10 @@ NumEntryGuards 8
 The directory can be different of course, but (both) port numbers should be equal to
 your voltd's P2P listen port (10581 by default).
 ```
--externalip=X   You can tell phore about its publicly reachable address using
+-externalip=X   You can tell volt about its publicly reachable address using
                 this option, and this can be a .onion address. Given the above
                 configuration, you can find your onion address in
-                /var/lib/tor/phore-service/hostname. Onion addresses are given
+                /var/lib/tor/volt-service/hostname. Onion addresses are given
                 preference for your node to advertize itself with, for connections
                 coming from unroutable addresses (such as 127.0.0.1, where the
                 Tor proxy typically runs).
@@ -110,7 +110,7 @@ for normal IPv4/IPv6 communication, use:
 ./voltd -onion=127.0.0.1:9050 -externalip=dnetzj6l4cvo2fxy.onion:989 -discover
 ```
 
-List of known Phore Tor relays
+List of known Volt Tor relays
 ------------------------------------
 ```
 y5kcscnhpygvvnjn.onion:989

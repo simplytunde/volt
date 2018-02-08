@@ -1,39 +1,39 @@
-Phore Core
+Volt Core
 =====================
 
 Setup
 ---------------------
-[Phore Core](http://phore.org/wallet) is the original Phore client and it builds the backbone of the network. However, it downloads and stores the entire history of Phore transactions; depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more. Thankfully you only have to do this once.
+[Volt Core](http://volt.org/wallet) is the original Volt client and it builds the backbone of the network. However, it downloads and stores the entire history of Volt transactions; depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more. Thankfully you only have to do this once.
 
 Running
 ---------------------
-The following are some helpful notes on how to run Phore on your native platform.
+The following are some helpful notes on how to run Volt on your native platform.
 
 ### Unix
 
 Unpack the files into a directory and run:
 
-- bin/32/phore-qt (GUI, 32-bit) or bin/32/voltd (headless, 32-bit)
-- bin/64/phore-qt (GUI, 64-bit) or bin/64/voltd (headless, 64-bit)
+- bin/32/volt-qt (GUI, 32-bit) or bin/32/voltd (headless, 32-bit)
+- bin/64/volt-qt (GUI, 64-bit) or bin/64/voltd (headless, 64-bit)
 
 ### Windows
 
-Unpack the files into a directory, and then run phore-qt.exe.
+Unpack the files into a directory, and then run volt-qt.exe.
 
 ### OSX
 
-Drag Phore-Qt to your applications folder, and then run Phore-Qt.
+Drag Volt-Qt to your applications folder, and then run Volt-Qt.
 
 ### Need Help?
 
-* See the documentation at the [Phore Wiki](https://en.bitcoin.it/wiki/Main_Page) ***TODO***
+* See the documentation at the [Volt Wiki](https://en.bitcoin.it/wiki/Main_Page) ***TODO***
 for help and more information.
-* Ask for help on [BitcoinTalk](https://bitcointalk.org/index.php?topic=1262920.0) or on the [Phore Forum](http://forum.phore.org/).
-* Join one of our Slack groups [Phore Slack Groups](https://phore.org/slack-logins/).
+* Ask for help on [BitcoinTalk](https://bitcointalk.org/index.php?topic=1262920.0) or on the [Volt Forum](http://forum.volt.org/).
+* Join one of our Slack groups [Volt Slack Groups](https://volt.org/slack-logins/).
 
 Building
 ---------------------
-The following are developer notes on how to build Phore on your native platform. They are not complete guides, but include notes on the necessary libraries, compile flags, etc.
+The following are developer notes on how to build Volt on your native platform. They are not complete guides, but include notes on the necessary libraries, compile flags, etc.
 
 - [OSX Build Notes](build-osx.md)
 - [Unix Build Notes](build-unix.md)
@@ -41,7 +41,7 @@ The following are developer notes on how to build Phore on your native platform.
 
 Development
 ---------------------
-The Phore repo's [root README](https://github.com/phoreproject/Phore/blob/master/README.md) contains relevant information on the development process and automated testing.
+The Volt repo's [root README](https://github.com/voltproject/Volt/blob/master/README.md) contains relevant information on the development process and automated testing.
 
 - [Developer Notes](developer-notes.md)
 - [Multiwallet Qt Development](multiwallet-qt.md)
@@ -55,8 +55,8 @@ The Phore repo's [root README](https://github.com/phoreproject/Phore/blob/master
 
 ### Resources
 
-* Discuss on the [BitcoinTalk](https://bitcointalk.org/index.php?topic=1262920.0) or the [Phore](http://forum.phore.org/) forum.
-* Join the [Phore-Dev](https://phore-dev.slack.com/) Slack group ([Sign-Up](https://phore-dev.herokuapp.com/)).
+* Discuss on the [BitcoinTalk](https://bitcointalk.org/index.php?topic=1262920.0) or the [Volt](http://forum.volt.org/) forum.
+* Join the [Volt-Dev](https://volt-dev.slack.com/) Slack group ([Sign-Up](https://volt-dev.herokuapp.com/)).
 
 ### Miscellaneous
 - [Assets Attribution](assets-attribution.md)

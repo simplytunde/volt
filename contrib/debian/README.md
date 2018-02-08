@@ -1,21 +1,21 @@
 
 Debian
 ====================
-This directory contains files used to package voltd/phore-qt
-for Debian-based Linux systems. If you compile voltd/phore-qt yourself, there are some useful files here.
+This directory contains files used to package voltd/volt-qt
+for Debian-based Linux systems. If you compile voltd/volt-qt yourself, there are some useful files here.
 
-## phore: URI support ##
+## volt: URI support ##
 
 
-phore-qt.desktop  (Gnome / Open Desktop)
+volt-qt.desktop  (Gnome / Open Desktop)
 To install:
 
-	sudo desktop-file-install phore-qt.desktop
+	sudo desktop-file-install volt-qt.desktop
 	sudo update-desktop-database
 
 If you build yourself, you will either need to modify the paths in
-the .desktop file or copy or symlink your phoreqt binary to `/usr/bin`
-and the `../../share/pixmaps/phore128.png` to `/usr/share/pixmaps`
+the .desktop file or copy or symlink your voltqt binary to `/usr/bin`
+and the `../../share/pixmaps/volt128.png` to `/usr/share/pixmaps`
 
-phore-qt.protocol (KDE)
+volt-qt.protocol (KDE)
 

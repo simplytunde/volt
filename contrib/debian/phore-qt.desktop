@@ -1,12 +1,12 @@
 [Desktop Entry]
 Encoding=UTF-8
-Name=Phore
-Comment=Phore P2P Cryptocurrency
-Comment[fr]=Phore, monnaie virtuelle cryptographique pair à pair
-Comment[tr]=Phore, eşten eşe kriptografik sanal para birimi
-Exec=phore-qt %u
+Name=Volt
+Comment=Volt P2P Cryptocurrency
+Comment[fr]=Volt, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=Volt, eşten eşe kriptografik sanal para birimi
+Exec=volt-qt %u
 Terminal=false
 Type=Application
-Icon=phore128
-MimeType=x-scheme-handler/phore;
+Icon=volt128
+MimeType=x-scheme-handler/volt;
 Categories=Office;Finance;

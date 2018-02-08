@@ -14,7 +14,7 @@ The implementation is dependent on the following:
 What's new
 ----------------
 
-The following new options are available for voltd and phore-qt:
+The following new options are available for voltd and volt-qt:
  - _-keepass_ Use KeePass 2 integration using KeePassHttp plugin (default: 0)
  - _-keepassport=_ Connect to KeePassHttp on port (default: 19455)
  - _-keepasskey=_ KeePassHttp key for AES encrypted communication with KeePass
@@ -30,22 +30,22 @@ The following rpc commands are available:
 How to setup
 ----------------
 
-Sample initialization flow from _phore-qt_ console (this needs to be done only once to set up the association):
+Sample initialization flow from _volt-qt_ console (this needs to be done only once to set up the association):
 
  - Have KeePass running with an open database
- - Start _phore-qt_
+ - Start _volt-qt_
  - Open console
- - Type "_keepass init_" in phore-qt console
+ - Type "_keepass init_" in volt-qt console
  - Keepass pops up and asks for an association id, fill that in, for example, "_mydrkwallet_"
- - You should get a response like this "_Association successful. Id: mydrkwalletphore - Key: AgQkcs6cI7v9tlSYKjG/+s8wJrGALHl3jLosJpPLzUE=_"
- - Edit _phore.conf_ and fill in these values
+ - You should get a response like this "_Association successful. Id: mydrkwalletvolt - Key: AgQkcs6cI7v9tlSYKjG/+s8wJrGALHl3jLosJpPLzUE=_"
+ - Edit _volt.conf_ and fill in these values
 ```
 keepass=1
 keepasskey=AgQkcs6cI7v9tlSYKjG/+s8wJrGALHl3jLosJpPLzUE=
 keepassid=mydrkwallet
 keepassname=testwallet
 ```
- - Restart _phore-qt_
+ - Restart _volt-qt_
 
 At this point, the association is made. The next action depends on your particular situation:
 

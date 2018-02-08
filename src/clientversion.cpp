@@ -10,10 +10,10 @@
 
 /**
  * Name of client reported in the 'version' message. Report the same name
- * for both voltd and phore-qt, to make it harder for attackers to
+ * for both voltd and volt-qt, to make it harder for attackers to
  * target servers or GUI users specifically.
  */
-const std::string CLIENT_NAME("Phore Core");
+const std::string CLIENT_NAME("Volt Core");
 
 /**
  * Client version number

@@ -1,18 +1,18 @@
 [Unit]
-Description=Phore's distributed currency daemon
+Description=Volt's distributed currency daemon
 After=network.target
 
 [Service]
-User=phore
-Group=phore
+User=volt
+Group=volt
 
 Type=forking
 PIDFile=/var/lib/voltd/voltd.pid
 
 ExecStart=/usr/bin/voltd -daemon -pid=/var/lib/voltd/voltd.pid \
-          -conf=/etc/phore/phore.conf -datadir=/var/lib/voltd
+          -conf=/etc/volt/volt.conf -datadir=/var/lib/voltd
 
-ExecStop=-/usr/bin/volt-cli -conf=/etc/phore/phore.conf \
+ExecStop=-/usr/bin/volt-cli -conf=/etc/volt/volt.conf \
          -datadir=/var/lib/voltd stop
 
 Restart=always

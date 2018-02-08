@@ -96,7 +96,7 @@ public:
 };
 
 /**
- * Phore RPC command dispatcher.
+ * Volt RPC command dispatcher.
  */
 class CRPCTable
 {

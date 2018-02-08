@@ -1,13 +1,13 @@
-Phore Core integration/staging repository
+Volt Core integration/staging repository
 =====================================
 
-Phore is a cutting edge cryptocurrency, with many features not available in most other cryptocurrencies.
+Volt is a cutting edge cryptocurrency, with many features not available in most other cryptocurrencies.
 - Anonymized transactions using zerocoin technology.
 - Fast transactions featuring guaranteed zero confirmation transactions, we call it _SwiftTX_.
 - Masternode technology used to secure the network and provide the above features, each Masternode is secured
   with collateral of 10K PHR
 
-17.6M phore was produced for swapping. 500k were mined 1-200 blocks to bring that amount to 18.1M PHR, the amount needed for the swap.
+17.6M volt was produced for swapping. 500k were mined 1-200 blocks to bring that amount to 18.1M PHR, the amount needed for the swap.
 
 _Unfortunately, the code was not properly forked on GitHub from the PIVX repository. This serves the same purpose. We forked from [PIVX-Project/PIVX](https://github.com/PIVX-Project/PIVX/)._
 
@@ -15,7 +15,7 @@ _Unfortunately, the code was not properly forked on GitHub from the PIVX reposit
 
 https://bitcointalk.org/index.php?topic=2307909.0
 
-Rebrand from KryptKoin [KTK] to Phore [PHR]
+Rebrand from KryptKoin [KTK] to Volt [PHR]
 
 ## Coin Specs ##
 <table>

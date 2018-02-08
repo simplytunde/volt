@@ -1,6 +1,6 @@
 [Protocol]
-exec=phore-qt '%u'
-protocol=phore
+exec=volt-qt '%u'
+protocol=volt
 input=none
 output=none
 helper=true

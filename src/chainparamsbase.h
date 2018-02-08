@@ -10,7 +10,7 @@
 
 /**
  * CBaseChainParams defines the base parameters (shared between volt-cli and voltd)
- * of a given instance of the Phore system.
+ * of a given instance of the Volt system.
  */
 class CBaseChainParams
 {
